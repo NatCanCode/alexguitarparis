@@ -535,7 +535,7 @@ label{
         padding: 5% 0;
     }
     #lessons{
-        min-height: 240vh;
+        min-height: 250vh;
     }
     .lessons-container{
         grid-template-rows: repeat(6, 1fr);
@@ -550,16 +550,16 @@ label{
         height: 95vh;
     }
     #footer{
-        height: 40vh;
+        height: 50vh;
     }
     .footer-container{
-        min-height: 40vh;		
+        min-height: 50vh;		
     }
     .logo-socials{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        height: 20vh;
+        height: 25vh;
     }
     .socials{
         width: 55%;

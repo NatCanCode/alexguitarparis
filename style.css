@@ -285,8 +285,6 @@ nav{
 .box1{
     grid-area: box1;
     flex-direction: column;
-    /* justify-content: space-between; */
-    /* align-items: space-around; */
 }
 .box2{
     grid-area: box2;
@@ -515,7 +513,7 @@ label{
 }
 /* iPhone XR */
 @media screen and (max-width: 414px){
-    nav {
+    nav{
         height: 15vh;
     }
     ul{
@@ -537,22 +535,25 @@ label{
         padding: 5% 0;
     }
     #lessons{
-        min-height: 115vh;
+        min-height: 230vh;
     }
     .lessons-container{
         grid-template-rows: repeat(6, 1fr);
     }
+    .lessons-btn{
+        margin: 10% 0;
+    }
     #contact{
-        min-height: 100vh;
+        height: 100vh;
     }
     .contact-container{
-        min-height: 95vh;
+        height: 95vh;
     }
     #footer{
-        min-height: 40vh;
+        height: 40vh;
     }
-    .footer-container {
-        height: 40vh;		
+    .footer-container{
+        min-height: 40vh;		
     }
     .logo-socials{
         flex-direction: column;
@@ -573,13 +574,13 @@ label{
         min-height: 85vh;
     }
     #footer{
-        min-height: 40vh;
+        height: 50vh;
     }
     .footer-container{
-        min-height: 40vh;
+        height: 50vh;
     }
     .logo-socials{
-        height: 21vh;
+        height: 25vh;
     }
 }
 

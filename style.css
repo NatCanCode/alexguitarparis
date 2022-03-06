@@ -221,7 +221,7 @@ nav{
     height: 80vh;
 }
 .img-gallery{
-    max-width: 58vw;
+    min-width: 50vw;
     margin: 0 auto;
     background: #212121;
     display: grid;
@@ -432,12 +432,12 @@ label{
 } */
 @media screen and (min-width: 1536px){
     .img-gallery{
-        max-width: 50vw;
+        min-width: 60vw;
     }
 }
 @media screen and (min-width: 1440px){
     .img-gallery{
-        max-width: 59vw;
+        min-width: 60vw;
     }
 }
 /* iPad Pro */
@@ -488,7 +488,18 @@ label{
 }
 /* iPad Mini */
 @media screen and (max-width: 768px){
-    
+    .lessons-container{
+        grid-gap: 1%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, .7fr);
+        grid-template-areas:
+            "box1" 
+            "box2"
+            "box3" 
+            "box4" 
+            "box5" 
+            "box6";
+    }
 }
 @media (max-width: 560px){
     .h-stretch{
@@ -515,17 +526,11 @@ label{
     h1, h2{
         text-align: center;
     }
+    .img-gallery{
+        padding: 5% 0;
+    }
     .lessons-container{
-        grid-gap: 1%;
-        grid-template-columns: repeat(1, 2fr);
         grid-template-rows: repeat(6, 1fr);
-        grid-template-areas:
-            "box1" 
-            "box2"
-            "box3" 
-            "box4" 
-            "box5" 
-            "box6";
     }
     #contact{
         min-height: 100vh;

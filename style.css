@@ -31,6 +31,9 @@ h2{
 }
 h3{
     font-size: clamp(24px, 10vw, 32px);
+    text-align: center;
+    color: black;
+    text-shadow: 0 0 1px white, 0 0 1px white, 0 0 1px white, 0 0 1px white;;
 }
 h4{
     font-size: clamp(18px, 10vw, 24px);
@@ -95,8 +98,8 @@ section{
     pointer-events: none;
 }
 .cursor {
-    height: 1px;
-    width: 1px;
+    height: 5px;
+    width: 5px;
     z-index: 10;
 }
 .circle {
@@ -207,7 +210,7 @@ nav{
 /* About */
 #about{
     background-color: #212121;
-    /* min-height: 1O0vh; */
+    min-height: 115vh;
 }
 .about-container{
     padding: 5%;
@@ -241,6 +244,13 @@ nav{
 }
 .img-container3, .img-container5, .img-container7, .img-container10{
     position: relative;
+}
+.pic1-container{
+    background: url("./img/pic1.png") no-repeat center / cover;
+    color: #FFE81B;
+    stroke: #000000;
+    justify-content: center;
+    align-items: center;
 }
 .pic3, .pic5, .pic7, .pic10{
     position: absolute;
@@ -424,12 +434,6 @@ label{
 }
 
 /* Media queries */
-/* 16" to 13" MacBook pro */
-/* @media (min-width: 1440px) and (max-width: 1792px){
-    .img-gallery{
-        max-width: 50vw;
-    }
-} */
 @media screen and (min-width: 1536px){
     .img-gallery{
         min-width: 60vw;
@@ -485,6 +489,9 @@ label{
         padding: 5% 0;
         height: auto;
     }
+    .socials {
+        width: 25%;
+    }
 }
 /* iPad Mini */
 @media screen and (max-width: 768px){
@@ -529,6 +536,9 @@ label{
     .img-gallery{
         padding: 5% 0;
     }
+    #lessons{
+        min-height: 115vh;
+    }
     .lessons-container{
         grid-template-rows: repeat(6, 1fr);
     }
@@ -538,11 +548,17 @@ label{
     .contact-container{
         min-height: 95vh;
     }
+    #footer{
+        min-height: 40vh;
+    }
+    .footer-container {
+        height: 40vh;		
+    }
     .logo-socials{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        height: 16vh;
+        height: 20vh;
     }
     .socials{
         width: 55%;

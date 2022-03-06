@@ -535,7 +535,7 @@ label{
         padding: 5% 0;
     }
     #lessons{
-        min-height: 250vh;
+        min-height: 260vh;
     }
     .lessons-container{
         grid-template-rows: repeat(6, 1fr);

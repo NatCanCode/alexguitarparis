@@ -50,19 +50,19 @@ a:hover{
 }
 button{
     background-color: #FFE81B;
-    /* border: 1px solid #FFE81B; */
+    border: 1px solid #FFE81B;
     color: #131313;
     font-family: 'Montserrat Alternates', sans-serif; 
     font-size: clamp(18px, 10vw, 21px);
     font-weight: 600;
     line-height: 30px;
-    padding: 2% 7% 2% 7%;
+    padding: 2% 11% 2% 11%;
     border-radius: 50px;
     transition: .3s ease background-color;
 }
 button:hover{
     background-color: #131313;
-    /* border: 1px solid #FFE81B; */
+    border: 1px solid #FFE81B;
     color: #FFE81B;
 }
 button a{
@@ -225,15 +225,19 @@ nav{
     margin: 0 auto;
     background: #212121;
     display: grid;
-    grid-gap: 7px;
+    grid-gap: 10px;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-auto-rows: 250px;
     grid-auto-flow: dense;
-    border: 1px lime solid;
     /* position: relative; */
 }
 .h-stretch{
     grid-column: span 2;
+}
+.img-gallery div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 .img-container3, .img-container5, .img-container7, .img-container10{
     position: relative;
@@ -296,7 +300,6 @@ nav{
 }
 .lessons-btn{
     margin-top: 10%;
-    width: 40%;
     justify-content: center;
     align-self: center;
 }
@@ -351,7 +354,6 @@ label{
 }
 .contact-btn{
     margin-top: 5%;
-    width: 40%;
     justify-content: center;
 }
 .btn-container{
@@ -456,6 +458,7 @@ label{
     .img-gallery{
         max-width: 100%;
         padding-top: 5%;
+        margin: 0;
     }
     .lessons-container{
         grid-template-columns: repeat(2, 2fr);
@@ -486,6 +489,11 @@ label{
 /* iPad Mini */
 @media screen and (max-width: 768px){
     
+}
+@media (max-width: 560px){
+    .h-stretch{
+        grid-column: span 1;
+    }
 }
 /* iPhone XR */
 @media screen and (max-width: 414px){
